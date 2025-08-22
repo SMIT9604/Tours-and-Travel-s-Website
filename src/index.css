@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  /* These are defaulted for light; overridden in .dark below via CSS vars */
+  --color-primary: #133E87; /* brand primary */
+  --color-secondary: #CBDCEB;
+  --color-accent: #608BC1;
+  --color-muted: #F3F3E0;
+}
+
+/* Theme tokens to ensure runtime toggle works regardless of variant mode */
+:root {
+  /* Light mode palette */
+  --surface: #F3F3E0; /* background */
+  --surface-elev: #CBDCEB; /* cards */
+  --on-surface: #133E87; /* text primary */
+  --nav-bg: #133E87; /* navbar */
+  --nav-text: #F3F3E0;
+  --chip-bg: rgba(255,255,255,0.2);
+  /* Sync Tailwind-referenced custom colors */
+  --color-primary: #133E87;
+  --color-secondary: #CBDCEB;
+  --color-accent: #608BC1;
+  --color-muted: #F3F3E0;
+}
+.dark, [data-theme="dark"] {
+  /* Dark mode palette */
+  --surface: #222831;
+  --surface-elev: #393E46;
+  --on-surface: #DFD0B8;
+  --nav-bg: #222831;
+  --nav-text: #DFD0B8;
+  --chip-bg: rgba(223,208,184,0.15);
+  /* Tailwind-referenced custom colors in dark */
+  --color-primary: #DFD0B8;
+  --color-secondary: #393E46;
+  --color-accent: #948979;
+  --color-muted: #222831;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply antialiased;
+  background-color: var(--surface);
+  color: var(--on-surface);
+}
