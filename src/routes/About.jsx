@@ -25,7 +25,7 @@ export default function AboutPage() {
 
       <div className="mt-12 flex justify-left">
         <a
-          href="https://www.instagram.com/pateldhrruv/"
+          href="https://www.instagram.com/smit_9604/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-3xl hover:opacity-80 transition"

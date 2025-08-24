@@ -54,7 +54,7 @@ export default function ContactPage() {
              style={{ backgroundColor: 'var(--surface-elev)', color: 'var(--on-surface)' }}>
           <h2 className="text-xl font-semibold" style={{ color: 'var(--on-surface)' }}>Contact details</h2>
           <ul className="mt-4 space-y-3">
-            <li className="flex items-center gap-3"><FiMapPin style={{ color: 'var(--color-accent)' }} /> Rajshree Skyz, CTM, Ahmedabad</li>
+            <li className="flex items-center gap-3"><FiMapPin style={{ color: 'var(--color-accent)' }} /> Sadguru Heritage, Hathijan Circle, Ahmedabad</li>
             <li className="flex items-center gap-3"><FiPhone style={{ color: 'var(--color-accent)' }} /> +91 635174000</li>
             <li className="flex items-center gap-3"><FiMail style={{ color: 'var(--color-accent)' }} /> traveltours@gmail.com</li>
           </ul>
@@ -77,7 +77,7 @@ export default function ContactPage() {
       {/* Instagram Icon at Bottom */}
       <div className="mt-12 flex justify-center">
         <a
-          href="https://www.instagram.com/pateldhrruv/"
+          href="https://www.instagram.com/smit_9604/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-3xl hover:opacity-80 transition"
